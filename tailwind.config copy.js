@@ -1,9 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: [
-    './resources/views/landing.blade.php',
-  ],
   content: ["./resources/**/*.blade.php",
   "./resources/**/*.js",
   "./resources/**/*.vue",],
@@ -13,9 +9,6 @@ module.exports = {
         'theme-blue': '#5515ef',
         'theme-blue-dark': '#3c01ca',
         'theme-pink': '#eb589e',
-        /*sidebar menu*/
-        'theme-black': '#272727',
-        'theme-green-light': '#fbfefb',
       },
       
       boxShadow: {
@@ -54,13 +47,6 @@ module.exports = {
           'desktop': '1200px',
           // => @media (min-width: 1200px) { ... }
        },
-       // sidebar menu
-       height: {
-        'screen-75': '90vh'
-      },
-      fontFamily: {
-        'main': ['"Open Sans"']
-      }
       
     },
   },

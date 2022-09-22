@@ -32,3 +32,7 @@ Route::get('/pcard5', function () {
 Route::get('/landing', function () {
     return view('landing');
 });
+
+Route::get('/amirlanding', function () {
+    return view('amirlanding');
+});
