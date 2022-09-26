@@ -12,11 +12,11 @@ burgerButton.addEventListener('click', function() {
     mobileNavbar.classList.remove('hidden')
 });
 
-closeButton.addEventListener('click', function() {
+ closeButton.addEventListener('click', function() {
     site.classList.remove('navbar-active-site-wrapper')
     site.classList.add('navbar-deactive-site-wrapper')
     bodyTag.classList.remove('active-navbar-body')
-    removeDeactiveClass()
+   removeDeactiveClass()
 });
 
 function removeDeactiveClass () {
@@ -24,4 +24,4 @@ function removeDeactiveClass () {
         site.classList.remove('navbar-deactive-site-wrapper')
         mobileNavbar.classList.add('hidden')
 }, 500);
-}
+} 
