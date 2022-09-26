@@ -29,8 +29,11 @@ Route::get('/pcard4', function () {
 Route::get('/pcard5', function () {
     return view('pcard5');
 });
+Route::get('/product', function () {
+    return view('landing-product');
+});
 Route::get('/landing', function () {
-    return view('landing');
+    return view('landing-front');
 });
 
 Route::get('/amirlanding', function () {
