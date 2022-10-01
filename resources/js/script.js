@@ -4,6 +4,7 @@ const searchButton = document.getElementById("searchButton");
 const site = document.getElementById("siteWrapper");
 const bodyTag = document.getElementsByTagName('body')[0];
 const mobileNavbar = document.getElementsByClassName('main-navbar')[0];
+const userSetting = document.getElementById("usersetting");
 
 burgerButton.addEventListener('click', function() {
     site.classList.remove('navbar-deactive-site-wrapper')
@@ -25,3 +26,10 @@ function removeDeactiveClass () {
         mobileNavbar.classList.add('hidden')
 }, 500);
 } 
+function usersettingmenu () {
+    userSetting.classList.add('visible')
+    document.getElementById("usersetting").innerHTML = "Hello World";
+} 
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
