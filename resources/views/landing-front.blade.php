@@ -78,7 +78,7 @@ Addidas
             class="text-white text-sm  text-center inline-flex items-center" type="button"> <span class="block lg:hidden">Hello</span>Yasir arfatse<img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-6 h-6  lg:w-6 px-2" alt=""></button>
            </div>
            <!-- Dropdown menu -->
-        <div id="usersetting" class="block z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+        <div id="usersetting" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
           <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
             <li>
               <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
@@ -202,6 +202,18 @@ Addidas
 </html>
 <script>
   function myFunction() {
-    document.getElementById("usersetting").classList.add('hidden');    
+    var a=true;
+    document.getElementById("usersetting").classList.toggle('hidden');
+    //var x=document.getElementById("usersetting").classList.add('hidden'); 
+    //var x = document.getElementById("usersetting");
+  /* if (a) {
+    document.getElementById("usersetting").classList.remove('hidden');
+    document.getElementById("usersetting").classList.add('visible');
+    a=false;
+  } else {
+    document.getElementById("usersetting").classList.remove('visible');
+    document.getElementById("usersetting").classList.add('hidden');
+    a=true
+  }    */
   }
   </script>
