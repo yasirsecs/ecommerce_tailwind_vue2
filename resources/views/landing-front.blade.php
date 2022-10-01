@@ -73,16 +73,13 @@ Addidas
         </nav>
         <!--top navbar rightside-->
         <div class="flex flex-col lg:flex-row lg:items-center cursor-pointer order-0 lg:order-1 mt-10 lg:mt-0">
-          <div class="order-1 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
-            <button id="dropdownDefault" onclick="usersettingmenu()" 
+          <div class="order-0 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
+            <button id="dropdownDefault" onclick="myFunction()" 
             class="text-white text-sm  text-center inline-flex items-center" type="button"> <span class="block lg:hidden">Hello</span>Yasir arfatse<img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-6 h-6  lg:w-6 px-2" alt=""></button>
            </div>
            <!-- Dropdown menu -->
-        <div id="usersetting" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+        <div id="usersetting" class=" order-1  lg:absolute hidden lg:top-10 lg:right-20 w-32 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
           <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-            </li>
             <li>
               <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
             </li>
@@ -94,11 +91,7 @@ Addidas
             </li>
           </ul>
         </div>
-        <button onclick="myFunction()">Click me</button>
-
-        <p id="demo"></p>
-        
-        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -202,7 +195,6 @@ Addidas
 </html>
 <script>
   function myFunction() {
-    var a=true;
     document.getElementById("usersetting").classList.toggle('hidden');
     //var x=document.getElementById("usersetting").classList.add('hidden'); 
     //var x = document.getElementById("usersetting");
