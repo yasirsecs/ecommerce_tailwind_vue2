@@ -73,12 +73,25 @@ Addidas
         </nav>
         <!--top navbar rightside-->
         <div class="flex flex-col lg:flex-row lg:items-center cursor-pointer order-0 lg:order-1 mt-10 lg:mt-0">
-          <div class="order-1 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
-            <span class="block lg:hidden">Hello</span>
-            <span class=" lg:hover:bg-slate-400 transition-all duration-200 ">Yasir arfatse</span>
-          </div>
-          <img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-10 h-10  lg:w-10 px-2" alt="">
+          <div class="order-0 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
+            <button id="dropdownDefault" onclick="myFunction()" 
+            class="text-white text-sm  text-center inline-flex items-center" type="button"> <span class="block lg:hidden">Hello</span>Yasir arfatse<img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-6 h-6  lg:w-6 px-2" alt=""></button>
+           </div>
+           <!-- Dropdown menu -->
+        <div id="usersetting" class=" order-1  lg:absolute hidden lg:top-10 lg:right-20 w-32 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+            </li>
+          </ul>
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -180,3 +193,19 @@ Addidas
 </footer>
 </body>
 </html>
+<script>
+  function myFunction() {
+    document.getElementById("usersetting").classList.toggle('hidden');
+    //var x=document.getElementById("usersetting").classList.add('hidden'); 
+    //var x = document.getElementById("usersetting");
+  /* if (a) {
+    document.getElementById("usersetting").classList.remove('hidden');
+    document.getElementById("usersetting").classList.add('visible');
+    a=false;
+  } else {
+    document.getElementById("usersetting").classList.remove('visible');
+    document.getElementById("usersetting").classList.add('hidden');
+    a=true
+  }    */
+  }
+  </script>
