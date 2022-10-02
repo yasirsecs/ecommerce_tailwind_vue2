@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @vite('resources/css/app.css')
-    @vite('resources/js/script.js')
+   <!--  @vite('resources/js/script1.js') -->    
+    <script src="{{asset('js/script.js')}}"></script>
    </head>
 <body>
   <div class="hidden lg:block  main-navbar  bg-theme-black h-screen lg:h-auto text-gray-100 w-full  left-0 top-0 py-6 lg:py-0">
@@ -73,24 +74,24 @@ Addidas
         </nav>
         <!--top navbar rightside-->
         <div class="flex flex-col lg:flex-row lg:items-center cursor-pointer order-0 lg:order-1 mt-10 lg:mt-0">
-          <div class="order-0 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
-            <button id="dropdownDefault" onclick="myFunction()" 
-            class="text-white text-sm  text-center inline-flex items-center" type="button"> <span class="block lg:hidden">Hello</span>Yasir arfatse<img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-6 h-6  lg:w-6 px-2" alt=""></button>
+          <div id="usersetting1" class="order-0 mt-4 lg:mt-0 lg:order-0 flex flex-col lg:flex-row lg:items-center  whitespace-nowrap lg:p-3    ">
+           <button id="dropdownDefault" onclick = "functionName()"
+            class="text-white text-sm  text-center inline-flex items-center" type="button">  <span class="block lg:hidden">Hello</span>Yasir arfatse<img src="/images/yasir1.jpg" class=" order-0 lg:order-1 block rounded-full w-6 h-6  lg:w-6 px-2" alt=""> </button> 
            </div>
            <!-- Dropdown menu -->
-        <div id="usersetting" class=" order-1  lg:absolute hidden lg:top-10 lg:right-20 w-32 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-            </li>
-          </ul>
-        </div>
+            <div id="usersetting2" class=" order-1  lg:absolute hidden lg:top-10 lg:right-20 w-32 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                <li>
+                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                </li>
+              </ul>
+            </div>
       </div>
       </div>
     </div>
@@ -110,6 +111,8 @@ Addidas
         </button>
       </div>
     </div>
+    <h4>Hey, click on the button below to invoke the function</h4>
+<input type = "button"  value = "Click Me">
     <div class="container mx-auto px-5 lg:px-0 flex item-center " style="background-image: {{ url('/images/addidas_shoe.jpg') }}">
     <img src="/images/addidas_shoe.jpg" alt="Girl in a jacket" class=" w-1/2 h-1/2">
     <img src="/images/addidas_shoe.jpg" alt="Girl in a jacket" class=" w-1/2 h-1/2">
@@ -194,7 +197,7 @@ Addidas
 </body>
 </html>
 <script>
-  function myFunction() {
+  /*function myFunction() {
     document.getElementById("usersetting").classList.toggle('hidden');
     //var x=document.getElementById("usersetting").classList.add('hidden'); 
     //var x = document.getElementById("usersetting");
@@ -206,6 +209,6 @@ Addidas
     document.getElementById("usersetting").classList.remove('visible');
     document.getElementById("usersetting").classList.add('hidden');
     a=true
-  }    */
-  }
+  }    
+  }*/
   </script>
