@@ -4,8 +4,8 @@ const searchButton = document.getElementById("searchButton");
 const site = document.getElementById("siteWrapper");
 const bodyTag = document.getElementsByTagName('body')[0];
 const mobileNavbar = document.getElementsByClassName('main-navbar')[0];
-/* const userSetting1 = document.getElementById("usersetting1");
-const userSetting2 = document.getElementById("usersetting2"); */
+const userSetting1 = document.getElementById("usersetting1");
+const userSetting2 = document.getElementById("usersetting2");
 
 burgerButton.addEventListener('click', function() {
     site.classList.remove('navbar-deactive-site-wrapper')
@@ -28,9 +28,6 @@ function removeDeactiveClass () {
 }, 500);
 } 
 
-/*   userSetting1.addEventListener('click', function() {
-   // document.getElementById("usersetting2").classList.toggle('hidden');
-   userSetting2.classList.toggle('hidden');
-}); */
+
 
 
